@@ -6,8 +6,9 @@ public class Dragon extends Creature {
         }
 
         
-        public void speak() {
-            System.out.println("Hola soy un dragon");
-        }
+		public void makeSound() {
+		
+			System.out.println("Awwwww.");
+		}
 
 }

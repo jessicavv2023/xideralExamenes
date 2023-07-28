@@ -6,9 +6,11 @@ public class Goblin extends Creature{
     }
 
 	
-    public void speak() {
-        System.out.println("Hola soy un goblin");
-    }
+	public void makeSound() {
+	
+		System.out.println("jajaja");
+		
+	}
 
 	
 }

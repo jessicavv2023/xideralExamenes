@@ -1,24 +1,27 @@
-public class main {
-    public static void Encounter(Creature creature) {
-        creature.attack();
-
-        if (creature instanceof Animal) {
-            ((Animal) creature).attack();
-        } else if (creature instanceof Human) {
-            ((Human) creature).makeSound ();
-        }
-    }
-
+public class Main {
+   
+    
     public static void main(String[] args) {
-        // Simulación del encuentro con criaturas
+      
         Creature dragon = new Dragon();
         Creature goblin = new Goblin();
-        Creature human = new Human();
+        Creature humanOne = new HumanOne();
+      
+      
+        System.out.println("Información del dragón:");
+        dragon.attack();
+        dragon.makeSound();
+        System.out.println("-----------**************------------");
 
-        Encounter(dragon);
-        System.out.println("**************");
-        Encounter(human);
-        System.out.println("**************");
-        Encounter(goblin);
+        System.out.println("Información del goblin:");
+        goblin.attack();
+        goblin.makeSound();
+        System.out.println("-----------**************------------");
+
+        System.out.println("Información del humano:");
+        humanOne.attack();
+        humanOne.makeSound();
+        System.out.println("-----------**************------------");
+       
     }
 }
