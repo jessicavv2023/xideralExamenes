@@ -1,5 +1,5 @@
 
-public  class HumanOne extends Creature{
+public  class HumanOne extends Creature implements Flyable{
 	
 	@Override
 	public void attack() {
@@ -9,6 +9,9 @@ public  class HumanOne extends Creature{
 	public void makeSound() {
         System.out.println("Rawwww");
     }
-	
+	@Override
+    public void fly() {
+        System.out.println("Super poder para volar ");
+    }
 }
 

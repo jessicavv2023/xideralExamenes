@@ -1,4 +1,6 @@
-public class Dragon extends Creature {
+
+public  class Dragon extends Creature {
+	
     
     	@Override
         public void attack() {
@@ -10,5 +12,10 @@ public class Dragon extends Creature {
 		
 			System.out.println("Awwwww.");
 		}
+
+		 public void fly() {
+		        
+		    }
+		
 
 }
