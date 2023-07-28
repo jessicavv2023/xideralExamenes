@@ -7,14 +7,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
 public class TimeAirOrder {
 	//Tiene un has a (tiene una) la clase TimeAirOrder tiene una lista de orderData
 	
 	
 	//Atributos privados para alomacenar la unica instancia de la clase 
 	
-	//Variable estática y privada llamada instance del tipo TimeAirOrder, almacena la instancia 
+	//Variable estática y privada llamada instance del tipo TimeAirOrder
+	//almacena la instancia 
     private static TimeAirOrder instance;
     //Almacena objetos de la clase orderData
     private List<OrderData> orderData;
@@ -58,18 +58,25 @@ public class TimeAirOrder {
   //Metodo para agregar cuantas recargas se realizaron 
     public void showOrders() {
         System.out.println("Orden de tiempo aire:");
+        // contador de ordenes de recarga 
         for (int i = 0; i < orderData.size(); i++) {
+        	//obtiene el elemento en la posicion de i de la lista ordenData 
+        	//cada elemento deista es una clase privada   
             OrderData order = orderData.get(i);
             System.out.println((i + 1) + ". Monto: $" + order.getAmount() );
         }
     }
 
+    
     private class OrderData {
+    	//Atributos
         private int price;
         private String benefit;
 
-        public OrderData(int amount, String benefit) {
-            this.price = amount;
+        //constructor  es un metodo 
+        public OrderData(int price, String benefit) {
+            this.price = price;
+            //parameto     atributo
             this.benefit = benefit;
         }
 

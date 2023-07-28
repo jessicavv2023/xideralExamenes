@@ -1,14 +1,18 @@
 public class Main {
    
-    
+    //Metodo estatico 
     public static void main(String[] args) {
-      
+         
+    	//Se crea una variable llamda dragon de tipo Creature
+    	//y se asigna a una instancia (objeto)llamda Dragon 
         Creature dragon = new Dragon();
         Creature goblin = new Goblin();
         Creature humanOne = new HumanOne();
       
       
         System.out.println("Información del dragón:");
+        
+        //comportamiento de los metodos 
         dragon.attack();
         dragon.makeSound();
         System.out.println("-----------**************------------");

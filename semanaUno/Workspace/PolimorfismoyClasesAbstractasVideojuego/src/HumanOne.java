@@ -9,6 +9,6 @@ public  class HumanOne extends Creature{
 	public void makeSound() {
         System.out.println("Rawwww");
     }
-
+	
 }
 
