@@ -1,25 +1,19 @@
+//Clase base
 abstract class Creature {
 	
+	//Metodos abstractos 
     public abstract void attack();
 
     public abstract void makeSound();
 }
 
+//Al ser clase anstracta no es necesario implementar los metodos abstractos de Creature
 abstract class Animal extends Creature {
-    public abstract void makeSound();
+    
 }
 
-
+//
 abstract class Human extends Creature  {
    
-    public void attack() {
-       
-    }
-
-	@Override
-	public void makeSound() {
-		// TODO Auto-generated method stub
-		
-	}
     
 }
