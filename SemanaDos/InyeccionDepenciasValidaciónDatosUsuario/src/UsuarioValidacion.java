@@ -1,7 +1,7 @@
 
 public interface UsuarioValidacion {
-	
-     boolean validacionDatosUsuairo (String nombre, String correo, int edad);
+	//Define metodo 
+     boolean validacionDatosUsuario (String nombre, String correo, int edad);
 
      
 }
