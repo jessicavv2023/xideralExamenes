@@ -1,6 +1,7 @@
 package Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
@@ -12,12 +13,12 @@ public class UsuarioTest {
 	
 	@Test
 	public void testGetNombre() {
-   Usuario usuario = new Usuario();
-   final usuario resultado = usuario.agregarUsuario();
-	
-	
+   //Usuario usuario = new Usuario();
+  // final usuario resultado = usuario.agregarUsuario();
 		Usuario usuario= new Usuario("John");
 		assertEquals("John", usuario.getNombre());
+		assertTrue(usuario.getNombre().startsWith("J"));
 	}
-
+	
+	
 }
